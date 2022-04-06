@@ -30,17 +30,17 @@
   <section class="app">
     <!--Orange-->
     <div class="inputs">
-      <form class="display-input--bill">
+      <form class="display-input--bill" id="formBill">
         <label for="inputBill">Bill</label>
         <div class="input-container">
           <div class="input__icon--bill"></div>
-          <input type="number" step="0.01" name="inputBill" id="inputBill">
+          <input type="number" step="0.01" name="inputBill" id="inputBill" placeholder="0.00">
         </div>
       </form>
       <!--Orange-->
       <div class="display-bottons">
         <label for="">Select tip %</label>
-        <div class="buttons-container">
+        <div class="buttons-container" id="buttons">
           <button class="input__button">5%</button>
           <button class="input__button">10%</button>
           <button class="input__button">15%</button>
@@ -50,14 +50,14 @@
         </div>
       </div>
       <!--Orange-->
-      <form class="display-input--people">
+      <form class="display-input--people" id="formPeople">
         <div class="input-titles">
           <label for="inputPeople">Number of People</label>
-          <span id="message" class="message">can't be zero</span>
+          <span id="messageForPeople" class="message hidden">can't be zero</span>
         </div>
         <div class="input-container">
           <div class="input__icon--people"></div>
-          <input type="number" name="inputPeople" id="inputPeople">
+          <input type="number" name="inputPeople" id="inputPeople" placeholder="0">
         </div>
       </form>
     </div>
@@ -69,14 +69,14 @@
             <span class="result__label--r">Tip Amount</span>
             <span class="result__label--l">/ person</span>
           </div>
-          <div class="result__text">67</div>
+          <input id="individual"  placeholder="0.00" class="result__text" disabled="disabled"></input>
         </div>
         <div class="result-total">
           <div class="result__label">
             <span class="result__label--r">Total</span>
             <span class="result__label--l">/ person</span>
           </div>
-          <div class="result__text">67</div>
+          <input id="total" placeholder="0.00" class="result__text" disabled="disabled"></input>
         </div>
         <button class="button-reset">RESET</button>
       </div>
@@ -86,5 +86,6 @@
     Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
     Coded by <a href="#">Your Name Here</a>.
   </div>
+  <script src="index.js"></script>
 </body>
 </html>
