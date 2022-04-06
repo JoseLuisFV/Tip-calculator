@@ -1,0 +1,28 @@
+.app {
+    display: flex;
+    gap: 30px;
+    min-width: 800px;
+    width: 100%;
+    max-width: 900px;
+}
+
+.inputs {
+    width: 50%;
+}
+
+.results { 
+    width: 50%;
+}
+
+.results-container {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+}
+
+.button-reset {
+    margin-top: auto;
+    margin-bottom: 0;
+}
+
+

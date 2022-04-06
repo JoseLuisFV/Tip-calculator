@@ -22,6 +22,14 @@ header {
     height: 120px;
 }
 
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
 .page-title {
     text-align: center;
     font-weight: 700;
@@ -69,6 +77,15 @@ header {
     font-family: 'Space Mono', monospace;
     text-align: right;
     color: hsl(183, 100%, 15%);
+}
+
+.input-titles {
+    display: flex;
+    justify-content: space-between;
+}
+
+.input-titles > .message {
+    color: goldenrod;
 }
 
 .input__icon--bill,
