@@ -180,6 +180,10 @@ body {
 
 }
 
+.result__label {
+    display: block;
+}
+
 .result__label--r {
     display: block;
     font-weight: 700;
@@ -192,6 +196,7 @@ body {
 }
 
 .result__text {
+    width: 64%;
     margin-left: auto;
     margin-right: 0px;
     font-family: 'Space Mono';
